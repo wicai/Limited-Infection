@@ -39,7 +39,7 @@ partial_infection is done in the following manner:
 2) Now that we have a set of numbers, we are looking for a subset s.t. the sum is close to the amount of users to infect                    
 
 We first sort the set and ignore all values that are greater than our target interval (i.e. (.95 -> 1.05) * num_to_infect)         
-Call this <t1, t2>
+Call this [t1, t2]
 
 We will basically use a greedy algorithm - add the largest element that is less than t2 and then                          
 the largest element less than (t2 - largest_element), etc.  If adding all of these actually takes us in the interval,               
