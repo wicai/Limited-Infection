@@ -42,7 +42,7 @@ We first sort the set and ignore all values that are greater than our target int
 Call this [t1, t2]
 
 We will basically use a greedy algorithm - add the largest element that is less than t2 and then                          
-the largest element less than (t2 - largest_element), etc.  If adding all of these actually takes us in the interval,               
+the largest element less than (t2 - element_we_added_last), etc.  If adding all of these actually takes us in the interval at any point,               
 we're done.  If we finish this not in the interval, it means we're under the interval and the smallest group              
 left will take us over the interval.  In this case, we will have to give the people in that group mixed A/B versions,
 but we will only infect just enough people to get in our interval.  
