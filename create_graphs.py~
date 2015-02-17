@@ -3,7 +3,7 @@
 
 import sys
 from user import User
-from total_infection import total_infection as total_infection
+from full_infection import full_infection as full_infection
 import random
 from partial_infection import partial_infection as partial_infection
 

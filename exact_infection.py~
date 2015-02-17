@@ -1,5 +1,5 @@
 #William Cai, Feb 14 
-#total_infection.py
+#full_infection.py
 from user import User
 from total_infection import total_infection
 from partial_infection import compute_groups as compute_groups
@@ -64,6 +64,6 @@ def exact_infection(users, version_num, num_to_infect):
     else:
         for i in range(len(track_subsets[num_to_infect][len(group_counts)] )):
             #infect the users that correspond to the elements of the subset
-            total_infection(group_users[track_subsets[num_to_infect][len(group_counts)][i]], 1)
+            full_infection(group_users[track_subsets[num_to_infect][len(group_counts)][i]], 1)
         return 1
     

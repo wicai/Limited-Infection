@@ -133,8 +133,9 @@ def partial_infection(users, version_num, num_to_infect):
             num_to_add = t1 - running_sum
             
             u_0 = group_users[not_added]
-            #the following is just depth first search which terminates when we've added enough
             #list of users to visit on our traversal
+            u_0.dump_user_info()
+            #the following is just depth first search which terminates when we've added enough
             to_visit = []
             to_visit.append(u_0)
             #set of users which have already been added to our to_visit                                                                 

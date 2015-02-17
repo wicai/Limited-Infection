@@ -88,7 +88,7 @@ def exact_infect_test():
 
     """
     print "exact_infection + graph of 100 nodes where each edge has ~10% of appearing" \
-        + " asking to infect 10 users"
+        + "asking to infect 10 users"
     num_users = 100
     rand = cg.random_graph(num_users, .05)
     attempt = exact_infection(rand, 1, 10)
@@ -108,23 +108,15 @@ def exact_infect_test():
     print "exact_infection + class graph with 20 teachers, avg of 15 students" \
         + " std dev of 5, asking it to infect 22 users"
     teach = cg.class_graph(20, 15, 5)
-    attempt = exact_infection(teach, 1, 22)
-    if (attempt == -1):
-        print "program deemed it could not be done"
-    else:
-        check_graph(teach)
+    exact_infection(teach, 1, 22)
+    check_graph(teach)
     print
     print "exact_infection + full graph with 100 nodes, asking it to infect 10 users"
     full = cg.full_graph(100)
-    attempt = exact_infection(full, 1, 10)
-    if (attempt == -1):
-        print "program deemed it could not be done"
-    else:
-        check_graph(full)
+    exact_infection(full, 1, 10)
+    check_graph(full)
 
 if __name__ == "__main__":
     full_infect_test()
-    print
     partial_infect_test()
-    print
     exact_infect_test()
