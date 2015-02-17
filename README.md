@@ -35,7 +35,7 @@ straightforward.
 
 partial_infection is done in the following manner:                                                                                                                        
 
-1) partitioning users into groups, keeping track of how many users are in each group                                         
+1) partition the users into groups, keeping track of how many users are in each group                                         
 2) Now that we have a set of numbers, we are looking for a subset s.t. the sum is close to the amount of users to infect                    
 
 We first sort the set and ignore all values that are greater than our target interval (i.e. (.95 -> 1.05) * num_to_infect)         
@@ -48,9 +48,9 @@ left will take us over the interval.  In this case, we will have to give the peo
 but we will only infect just enough people to get in our interval.  
 
 Exact infection is done in the following manner:
-1) partitioning users into groups, keeping track of how many users are in each group, just like in the previous infection
-2) Solve the subset-sum problem for the set of numbers corresponding the number of users in each group using a dynamic programming
-algorithm.
+
+1) partition the users into groups, keeping track of how many users are in each group, just like in the previous infection
+2) Solve the subset-sum problem for the set of numbers corresponding the number of users in each group using a dynamic programming algorithm.
 
 The idea is that we can use a dynamic programming algorithm, solving subproblems of the form                              
 ex(i, j) = true if there is a subset of set[0, 1, ..., j-1] with sum = i and building up to solve                         
