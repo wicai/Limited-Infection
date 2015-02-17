@@ -17,7 +17,7 @@ def exact_infection(users, version_num, num_to_infect):
        run in reasonable time.  
        
        We will solve the problem in "pseudo-polynomial" time - this works pretty well if num_to_infect is
-       small, but will prove pretty disastrous otherwise (A/B testing starts with only a few people right?)
+       small, but will otherwise take a long time (A/B testing starts with only a few people right?)
        
        The idea is that we can use a dynamic programming algorithm, solving subproblems of the form
        ex(i, j) = true if there is a subset of set[0, 1, ..., j-1] with sum = i and building up to solve
