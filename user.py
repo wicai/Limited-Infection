@@ -1,4 +1,4 @@
-#William Cai, Febraury 14
+#William Cai, Febraury 14 
 #user.py 
 class User:
     def __init__(self, user_id, username, students, coaches, version):

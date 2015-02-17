@@ -1,4 +1,4 @@
-#William Cai, Feb 14 
+#William Cai, Feb 14  
 #full_infection.py
 from user import User
 

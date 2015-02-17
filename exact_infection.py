@@ -1,5 +1,5 @@
 #William Cai, Feb 14 
-#total_infection.py
+#total_infection.py 
 from user import User
 from total_infection import total_infection
 from partial_infection import compute_groups as compute_groups

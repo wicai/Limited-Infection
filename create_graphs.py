@@ -1,7 +1,7 @@
 #William Cai, February 14
 #create_graphs.py, contains methods for creating graphs
 
-import sys
+import sys 
 from user import User
 from total_infection import total_infection as total_infection
 import random
